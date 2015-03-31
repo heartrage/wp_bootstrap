@@ -1,0 +1,16 @@
+body {
+    /* Margin bottom by footer height */
+    margin-bottom: 60px;
+}
+
+footer {
+    color: #fff;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    /* Set the fixed height of the footer here */
+    height: 60px;
+    background: #000000;
+}
+
+/*# sourceMappingURL=style.css.map */
