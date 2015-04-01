@@ -1,7 +1,6 @@
 <?php
-/***************************
-Загружаемые стили и скрипты
- ****************************/
+/*******************Загружаемые стили и скрипты************************************/
+
 function load_style_script() {
     wp_enqueue_style('style.css', get_template_directory_uri(). '/style.css');
     wp_enqueue_style('menu.css', get_template_directory_uri() . '/css/menu.css');
@@ -11,9 +10,22 @@ function load_style_script() {
 }
 
 add_action('wp_enqueue_scripts', 'load_style_script');
-/***********************************************************
-*/
+/************************************************************/
 
 
-// Register Custom Navigation Walker
+/****** Register Custom Navigation Walker********/
 require_once('wp_bootstrap_navwalker.php');
+/***********************************************/
+
+/**************Регистриуем сайдбар в админке****************************/
+
+register_sidebar(array(
+    'name' => 'Виджеты сайдбара',
+    'id' => 'sidebar',
+    'description' => 'Здесь размещайте виджеты сайдбара',
+    'before_widget'=>'<div class="widget">',
+    'after_widget' => '</div>',
+    'before_title' => '<h2>',
+    'after_title' => '</h2>',
+));
+/**********************************************************************/
