@@ -8,6 +8,10 @@ body {
   /* Margin bottom by footer height */
   margin-bottom: 60px; }
 
+.error404 {
+  background: url("/wp-content/themes/bootstrap/img/error404.png");
+  height: 500px; }
+
 footer {
   color: #fff;
   position: absolute;

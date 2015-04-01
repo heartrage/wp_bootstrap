@@ -19,7 +19,10 @@ header {
 
 }
 
-
+.error404{
+  background: url('/wp-content/themes/bootstrap/img/error404.png');
+  height: 500px;
+}
 
 footer {
   color: $white_color;
