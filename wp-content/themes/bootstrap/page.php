@@ -28,3 +28,6 @@
     </div>
 </div>
 
+<!--footer-->
+<?php get_footer(); ?>
+<!--/-->
