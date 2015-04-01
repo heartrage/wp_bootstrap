@@ -12,9 +12,14 @@
             <?php if(have_posts()):while (have_posts()):the_post();  ?>
                 <!--выводим заголовок записи-->
                 <h1><?php the_title();  ?></h1>
+                <!--                выводим дату-->
+                <?php the_time('d.m.Y'); ?>
+                <!--выводим миниатюру-->
 
+                <?php the_post_thumbnail('thumbnail', ''); ?>
                 <!-- выводим контент-->
                 <p><?php the_content();  ?></p>
+
 
             <?php endwhile; ?>
                 <!--    post navigation-->
@@ -28,3 +33,7 @@
     </div>
 </div>
 
+
+<!--footer-->
+<?php get_footer(); ?>
+<!--/-->

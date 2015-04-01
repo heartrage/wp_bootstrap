@@ -28,7 +28,6 @@ class wp_bootstrap_navwalker extends Walker_Nav_Menu
     /**
      * @see Walker::start_el()
      * @since 3.0.0
-     *
      * @param string $output Passed by reference. Used to append additional content.
      * @param object $item Menu item data object.
      * @param int $depth Depth of menu item. Used for padding.
